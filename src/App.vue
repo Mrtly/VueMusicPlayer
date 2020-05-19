@@ -1,26 +1,28 @@
 <template>
-  <div id="app">
-     <header><h3>tunesss</h3></header>
+  <div id="app">   
   <main>
+    <div class="header">
+       <h3>tunesss</h3>
+       <p>icon</p>
+     </div>
     <section class="player">
       <h2 class="title"> {{ current.title }} - <span>{{ current.artist }}</span></h2>
       <div class="control">
-        <button class="prev" @click="prev"> Previous</button>
-        <button class="paus" v-if="!isPlaying" @click="play"> Play</button>
-        <button class="play" v-else @click="pause"> Pause</button>
-        <button class="next" @click="next"> Next</button>
+        <button class="prev" @click="prev"> previous </button>
+        <button class="paus" v-if="!isPlaying" @click="play"> play</button>
+        <button class="play" v-else @click="pause"> pause</button>
+        <button class="next" @click="next"> next </button>
       </div>
     </section>
     <section class="playlist">
       <h4> playlist </h4>
-      <button v-for="song in songs" 
+      <li v-for="song in songs" 
       :key="song.src" 
       @click="play(song)" 
       :class="(song.src == current.src) ? 'song playing' : 'song'">
-      {{ song.title }} - {{ song.artist }}
-      </button>
+      <button>{{ song.title }} - {{ song.artist }}</button>
+      </li>
     </section>
-    <hr>
     <img :src="current.image" /> 
   </main>
   </div>
@@ -89,6 +91,18 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+$lilac: #785589;
+$yolk: #fac748;
+$lapis: #1561a8;
+$off-white: #f2f4f5;
+$raisin: #272727;
 
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 1.2em
+}
 </style>

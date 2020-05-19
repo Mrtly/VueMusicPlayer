@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-     <header>tunesss</header>
+     <header><h3>tunesss</h3></header>
   <main>
     <section class="player">
       <h2 class="title"> {{ current.title }} - <span>{{ current.artist }}</span></h2>
@@ -20,6 +20,8 @@
       {{ song.title }} - {{ song.artist }}
       </button>
     </section>
+    <hr>
+    <img :src="current.image" /> 
   </main>
   </div>
 </template>
@@ -36,14 +38,17 @@ export default {
       songs: [
         {title: 'The richest man in Babylon',
         artist: 'Thievery Corporation',
-        src: require('./assets/the_richest_man_in_babylon.mp3')
+        src: require('./assets/the_richest_man_in_babylon.mp3'),
+        image: "https://picsum.photos/300/?random=1"
         },
         {title: 'Until the morning',
         artist: 'Thievery Corporation',
-        src: require('./assets/until_the_morning.mp3')
+        src: require('./assets/until_the_morning.mp3'),
+        image: "https://picsum.photos/300/?random=2"
         }
       ],
-      player: new Audio()
+      player: new Audio(),
+
     }
   },
   methods: {

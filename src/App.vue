@@ -13,10 +13,11 @@
           <h2 id="title"> {{ current.title }} </h2>
             <p>{{ current.artist }}</p>
           <div id="control">
-            <button class="prev" @click="prev"> previous </button>
-            <button class="paus" v-if="!isPlaying" @click="play"> play</button>
-            <button class="play" v-else @click="pause"> pause</button>
-            <button class="next" @click="next"> next </button>
+            <button class="prev" @click="prev"> <font-awesome-icon icon="backward" /> </button>
+            <button class="paus" v-if="!isPlaying" @click="play"> <font-awesome-icon icon="play" /> </button>
+            <button class="play" v-else @click="pause"> <font-awesome-icon icon="pause" /> </button>
+            <button class="next" @click="next"> <font-awesome-icon icon="forward" /> </button>
+            
           </div>
         </div>
 

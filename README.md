@@ -8,6 +8,8 @@
 
 #### what it looks like
 
+<img src="music.png" width="500" />
+
 ### next steps:
 
 * host the project so that it can be viewed live

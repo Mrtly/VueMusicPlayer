@@ -1,24 +1,19 @@
-# musicapp
+### a Vue project: music app
 
-## Project setup
-```
-npm install
-```
+#### experimenting with Vue
+#### features:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+* 2 awesome tunes to choose from!
+* beautiful images gifted to the world by the Picsum API (new pic every tune/load!)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+#### what it looks like
 
-### Lints and fixes files
-```
-npm run lint
-```
+### next steps:
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* host the project so that it can be viewed live
+* transfer the current app into a component
+* expand with more tunes
+* expand with more features
+
+
+

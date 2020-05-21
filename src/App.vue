@@ -1,45 +1,35 @@
 <template>
   <div id="app">   
   <main>
-    <div id="header">
-       <!-- <h3>tunesss</h3>
-       <p>icon</p> -->
-     </div>
     <section id="player">
       <img :src="current.image" /> 
-
       <div id="playerelems">
         <div id="titleandcontrol">
           <h2 id="title"> {{ current.title }} </h2>
             <p>{{ current.artist }}</p>
           <div id="control">
-            <button class="prev" @click="prev"> <font-awesome-icon icon="backward" /> </button>
-            <button class="paus" v-if="!isPlaying" @click="play"> <font-awesome-icon icon="play" /> </button>
-            <button class="play" v-else @click="pause"> <font-awesome-icon icon="pause" /> </button>
-            <button class="next" @click="next"> <font-awesome-icon icon="forward" /> </button>
-            
+              <button class="prev" @click="prev"> <font-awesome-icon icon="backward" /> </button>
+              <button class="paus" v-if="!isPlaying" @click="play"> <font-awesome-icon icon="play" /> </button>
+              <button class="play" v-else @click="pause"> <font-awesome-icon icon="pause" /> </button>
+              <button class="next" @click="next"> <font-awesome-icon icon="forward" /> </button>
+            </div>
           </div>
-        </div>
-
         <div id="playlist">
           <h5> playlist </h5>
           <li v-for="song in songs" 
-          :key="song.src" 
-          @click="play(song)" 
-          :class="(song.src == current.src) ? 'song playing' : 'song'">
-          <button>{{ song.title }} - {{ song.artist }}</button>
+            :key="song.src" 
+            @click="play(song)" 
+            :class="(song.src == current.src) ? 'song playing' : 'song'">
+            <button>{{ song.title }} - {{ song.artist }}</button>
           </li>
         </div>
-    </div>
+     </div>
     </section>
-    
-    
-  </main>
+   </main>
   </div>
 </template>
 
-<script>
- 
+<script> 
 export default {
   name: 'app', 
   data() { //this is like useState
@@ -121,7 +111,7 @@ body {
 
 #app {
   margin: 1em;
-  width: 50%;
+  width: 800px;
 }
 
 #player {
@@ -164,8 +154,7 @@ body {
         margin-top:10px;
         letter-spacing: 2px;
         font-family: 'Quicksand', sans-serif;
-
-      }
+        }
       }
     }
   }
@@ -178,9 +167,9 @@ body {
   #app {
   margin: 0;
   width: 100%;
-  height: 100vh
 }
   #player {
+  height: 100vh;
   display: grid;
   padding: 1em;
   #playerelems {

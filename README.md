@@ -1,6 +1,7 @@
 ### a Vue project: music app
 
 #### experimenting with Vue
+
 #### features:
 
 * 2 awesome tunes to choose from!
@@ -12,10 +13,10 @@
 
 ### next steps:
 
-* host the project so that it can be viewed live
-* transfer the current app into a component
-* expand with more tunes
-* expand with more features
+* star rating
+* router links
+* more tunes
+* more features
 
 
 

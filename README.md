@@ -2,6 +2,8 @@
 
 #### experimenting with Vue
 
+### demo [here](https://vue-tunes.surge.sh/)
+
 #### features:
 
 * 2 awesome tunes to choose from!
@@ -9,7 +11,7 @@
 
 #### what it looks like
 
-<img src="music.png" width="500" />
+[<img src="music.png" width="500" />](https://vue-tunes.surge.sh/)
 
 ### next steps:
 
